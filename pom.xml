@@ -4,11 +4,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.sonarqube</groupId>
-  <artifactId>sonarscanner-maven-aggregate</artifactId>
+<!--  <artifactId>sonarscanner-maven-aggregate</artifactId>-->
+  <artifactId>maven-multimodule</artifactId>
   <version>1.0-SNAPSHOT</version>
+<!--  <version>1.0</version>-->
   <packaging>pom</packaging>
 
-  <name>Example of multi-module Maven project</name>
+<!--  <name>Example of multi-module Maven project</name>-->
+  <name>maven-multimodule</name>
 
   <modules>
     <module>module1</module>
@@ -107,8 +110,13 @@
   
   <distributionManagement>
     <snapshotRepository>
-      <id>maven-multimodulo</id>
-      <url>http://localhost:8081/repository/maven-multimodulo/</url>
+<!--	<repository>-->
+<!--      <id>maven-multimodulo</id>-->
+      <id>nexus-snapshots</id>
+<!--      <url>http://localhost:8081/repository/maven-multimodulo/</url>-->
+<!--      <url>http://localhost:8081/repository/maven-releases/</url>-->
+      <url>http://localhost:8081/repository/maven-snapshots/</url>
+<!--    </repository>-->
     </snapshotRepository>
   </distributionManagement>  
 
